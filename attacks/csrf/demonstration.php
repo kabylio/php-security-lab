@@ -16,7 +16,7 @@ declare(strict_types=1);
         <h1>Profile Update Request</h1>
         <p>This local page submits a state-changing POST using the victim browser's existing authenticated session.</p>
         <!-- V1 intentional weakness: no CSRF token is included or validated. -->
-        <form method="post" action="/php-security-lab/profile/update.php">
+        <form method="post" action="/php-security-lab/profile/index.php">
             <label>Injected email
                 <input type="email" name="email" value="csrf-attacked@example.test" required>
             </label>

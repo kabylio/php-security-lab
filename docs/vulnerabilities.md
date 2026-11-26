@@ -6,6 +6,6 @@
 
 ## CSRF
 
-`profile/update.php` intentionally accepts a state-changing POST from an authenticated session without a CSRF token or origin/referer validation.
+`profile/index.php` intentionally accepts a state-changing POST from an authenticated session without a CSRF token or origin/referer validation. `profile/update.php` remains a compatibility path to the same handler.
 
 No additional unrelated application vulnerability is intentionally introduced.
